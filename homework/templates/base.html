@@ -1,0 +1,76 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homeworksite</title>
+    <link href="{% static 'css/mustard-ui.min.css' %}" rel="stylesheet">
+</head>
+<body>
+<nav>
+    <div class="nav-container">
+        <div class="nav-logo">
+            <a href="/">Блядский Цирк</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/">Главная</a></li>
+            <li><a href="/about">О нас</a></li>
+            <li><a href="/contacts">Контакты</a></li>
+        </ul>
+        <a class="mobile-menu-toggle"></a>
+        <ul class="mobile-menu menu">
+            <li><a href="/docs/installation">Главная</a></li>
+            <li><a href="/about" target="_blank">О нас</a></li>
+            <li><a href="/contacts">Контакты</a></li>
+        </ul>
+    </div>
+</nav>
+
+{% block content %}
+<h1>Base template</h1>
+{% endblock %}
+
+</body>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col col-lg-5">
+                <div class="footer-text">
+                    <p class="h3">О нас</p>
+                    <p>Наше представление это смешь боли, абсурда и полного непонимания последствий.
+                    Каждый член команды набран с улицы и никогда не был обучен. Мы ненавидим эту работу и
+                    готовы отдать душу, чтобы уйти из этого ада! (спасите)</p>
+                </div>
+            </div>
+            <div class="col col-sm-6 col-lg-3 col-lg-offset-1">
+                <h4 class="footer-links-category">Мы в социальных сетях</h4>
+                <ul class="footer-links">
+                    <li><a href="https://leprosorium.ru/login/">1</a></li>
+                    <li><a href="https://ru.wikipedia.org/wiki/%D0%94%D0%B5_%D0%92%D0%B8%D1%82%D0%BE,_%D0%94%D1%8D%D0%BD%D0%BD%D0%B8">22</a></li>
+                    <li><a href="https://ru.wikipedia.org/wiki/%D0%9D%D0%B8%D1%80%D0%B2%D0%B0%D0%BD%D0%B0">333</a></li>
+                </ul>
+            </div>
+
+            <div class="col col-sm-6 col-lg-3">
+                <h4 class="footer-links-category">Какие-то ссылки</h4>
+                <ul class="footer-links">
+                    <li><a href="https://lenta.ru/articles/2015/03/27/muslimgirl/">4444</a></li>
+                    <li><a href="https://tinder.com/?lang=ru">55555</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">666666</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <p class="copyright align-center">Сделано за 🌭 местным клоуном. Лицензии нет, денег нет.</p>
+
+</footer>
+
+<section>
+    <p class="h3"><strong>Больше о нас</strong></p>
+    <p>Больше о наших представлениях можно узнать также тут <a href="https://upyachka.io/">Забытая богом страница</a>.</p>
+</section>
+
+
+</html>

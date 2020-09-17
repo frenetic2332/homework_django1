@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% block content%}
+<section>
+    <h1 class="h2" align="center">Наши цены</h1>
+    <div class="pricing-table row">
+        <div class="col col-sm-6">
+            <div class="package">
+                <p class="package-name">Блядский цирк</p>
+                <hr>
+
+                <p class="price">1000 сом</p>
+                <p class="disclaimer">Для одного (ну не с семьёй же идти)</p>
+                <hr>
+
+                <ul class="features">
+                    <li>Клоуны</li>
+                    <li>Уродцы</li>
+                    <li>Львы (кошки)</li>
+                    <li>Волки (собаки покрашенные)</li>
+                    <li>Лошади</li>
+                </ul>
+                <button class="button-primary">Get Started</button>
+            </div>
+        </div>
+        <div class="col col-sm-6">
+            <div class="package featured">
+                <p class="package-name">Пойти</p>
+                <hr>
+
+                <p class="price">Бесплатно</p>
+                <p class="disclaimer">per user</p>
+                <hr>
+
+                <ul class="features">
+                    <li>Клоун крикун</li>
+                    <li>Клоун плакса</li>
+                    <li>Страшный костюм медведя</li>
+                    <li>Ящик водки(обсуждается)</li>
+                    <li>Балалайка</li>
+                </ul>
+                <button class="button-primary">Рискнуть</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="stepper">
+        <div class="step">
+            <p class="step-number">1</p>
+            <p class="step-title">Ты покупаешь билет</p>
+            <p>Подумай. Лучшая ли это идея?</p>
+
+        </div>
+        <div class="step">
+            <p class="step-number">2</p>
+            <p class="step-title">Идешь в цирк</p>
+            <p>Реально? Ты снова решил забухать?</p>
+
+        </div>
+        <div class="step">
+            <p class="step-number">3</p>
+            <p class="step-title">Выходишь с представления!?</p>
+            <p>Теперь ты часть команды, часть корабля!</p>
+
+        </div>
+    </div>
+</section>
+{% endblock %}

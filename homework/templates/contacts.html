@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content%}
+<h4>Ты реально хочешь с нами связаться? Давай мы тебе сами позвоним (нет)</h4>
+<!-- Normal Field -->
+<div class="form-control">
+    <label>Телефон</label>
+    <input type="text" placeholder="Ваш номер телефона">
+</div>
+
+<!-- Invalid Field -->
+<div class="form-control">
+    <label>ФИО</label>
+    <input class="invalid" type="text" placeholder="ФИО">
+    <p class="validation-error">Это обязательное поле (иначе есть риск услывашь "Алё ВАСЁК!").</p>
+</div>
+
+<section>
+    <button class="button-primary button-round button-shadow">Оставить заявку на звонок</button>
+</section>
+{% endblock %}
